@@ -50,7 +50,7 @@
 		158477492200798000CA5BE9 /* securityd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = securityd.cpp; sourceTree = "<group>"; };
 		1584774C2200798100CA5BE9 /* ucsp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ucsp.hpp; sourceTree = "<group>"; };
 		15847753220079BA00CA5BE9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		357BCD292933024E0012C51F /* keystealDaemon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = keystealDaemon; sourceTree = "<group>"; };
+		357BCD292933024E0012C51F /* keystealDaemon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = keystealDaemon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
