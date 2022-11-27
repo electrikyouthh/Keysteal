@@ -10,7 +10,7 @@
 		354FBBBC2933568500FAE8A1 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 158477482200798000CA5BE9 /* main.mm */; };
 		354FBBBD293356A200FAE8A1 /* securityd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 158477492200798000CA5BE9 /* securityd.cpp */; };
 		354FBBBE293356A400FAE8A1 /* assembly.s in Sources */ = {isa = PBXBuildFile; fileRef = 158477472200798000CA5BE9 /* assembly.s */; };
-		354FBBBF293356B400FAE8A1 /* ucspUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 158477462200798000CA5BE9 /* ucspUser.cpp */; };
+		354FBBD629335D7E00FAE8A1 /* ucspUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 158477462200798000CA5BE9 /* ucspUser.cpp */; };
 		357BCD23293300590012C51F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15847753220079BA00CA5BE9 /* Security.framework */; };
 		357BCD24293300590012C51F /* Security.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15847753220079BA00CA5BE9 /* Security.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -173,7 +173,7 @@
 				354FBBBD293356A200FAE8A1 /* securityd.cpp in Sources */,
 				354FBBBC2933568500FAE8A1 /* main.mm in Sources */,
 				354FBBBE293356A400FAE8A1 /* assembly.s in Sources */,
-				354FBBBF293356B400FAE8A1 /* ucspUser.cpp in Sources */,
+				354FBBD629335D7E00FAE8A1 /* ucspUser.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
