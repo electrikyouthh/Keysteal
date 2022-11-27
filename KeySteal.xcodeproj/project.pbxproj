@@ -26,16 +26,16 @@
 /* Begin PBXFileReference section */
 		155FA80D22A29CDB00D68879 /* keystealClient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = keystealClient.xcodeproj; path = keystealClient/keystealClient.xcodeproj; sourceTree = "<group>"; };
 		155FA81322A29CE000D68879 /* keystealDaemon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = keystealDaemon.xcodeproj; path = keystealDaemon/keystealDaemon.xcodeproj; sourceTree = "<group>"; };
-		155FA81922A29DB000D68879 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		155FA81F22A2B14C00D68879 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		35CDAD572933B1D200B2AA44 /* Base */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; lineEnding = 0; name = Base; path = Base.lproj/README.md; sourceTree = "<group>"; };
+		35CDAD5B2933B1E400B2AA44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text; name = Base; path = Base.lproj/LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		155FA80622A29CBB00D68879 = {
 			isa = PBXGroup;
 			children = (
-				155FA81922A29DB000D68879 /* README.md */,
-				155FA81F22A2B14C00D68879 /* LICENSE.txt */,
+				35CDAD582933B1D200B2AA44 /* README.md */,
+				35CDAD5C2933B1E400B2AA44 /* LICENSE.txt */,
 				155FA81322A29CE000D68879 /* keystealDaemon.xcodeproj */,
 				155FA80D22A29CDB00D68879 /* keystealClient.xcodeproj */,
 				357BCD322933038B0012C51F /* Products */,
@@ -118,6 +118,25 @@
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
+
+/* Begin PBXVariantGroup section */
+		35CDAD582933B1D200B2AA44 /* README.md */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35CDAD572933B1D200B2AA44 /* Base */,
+			);
+			name = README.md;
+			sourceTree = "<group>";
+		};
+		35CDAD5C2933B1E400B2AA44 /* LICENSE.txt */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35CDAD5B2933B1E400B2AA44 /* Base */,
+			);
+			name = LICENSE.txt;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		155FA80B22A29CBB00D68879 /* Debug */ = {
