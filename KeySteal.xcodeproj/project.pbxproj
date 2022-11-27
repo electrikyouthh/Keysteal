@@ -28,14 +28,12 @@
 		155FA81322A29CE000D68879 /* keystealDaemon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = keystealDaemon.xcodeproj; path = keystealDaemon/keystealDaemon.xcodeproj; sourceTree = "<group>"; };
 		155FA81922A29DB000D68879 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		155FA81F22A2B14C00D68879 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		357BCD2C293303000012C51F /* Keysteal */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Keysteal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		155FA80622A29CBB00D68879 = {
 			isa = PBXGroup;
 			children = (
-				357BCD2C293303000012C51F /* Keysteal */,
 				155FA81922A29DB000D68879 /* README.md */,
 				155FA81F22A2B14C00D68879 /* LICENSE.txt */,
 				155FA81322A29CE000D68879 /* keystealDaemon.xcodeproj */,
