@@ -14,6 +14,7 @@
 		1584776A22007D9E00CA5BE9 /* assembly.s in Sources */ = {isa = PBXBuildFile; fileRef = 1584776622007D9E00CA5BE9 /* assembly.s */; };
 		1584776B22007D9E00CA5BE9 /* inject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1584776722007D9E00CA5BE9 /* inject.cpp */; };
 		1584776C22007D9E00CA5BE9 /* inject.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1584776822007D9E00CA5BE9 /* inject.hpp */; };
+		354FBBD82933644000FAE8A1 /* assembly.s in Sources */ = {isa = PBXBuildFile; fileRef = 354FBBD72933643F00FAE8A1 /* assembly.s */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +39,7 @@
 		1584776622007D9E00CA5BE9 /* assembly.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = assembly.s; sourceTree = "<group>"; };
 		1584776722007D9E00CA5BE9 /* inject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inject.cpp; sourceTree = "<group>"; };
 		1584776822007D9E00CA5BE9 /* inject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = inject.hpp; sourceTree = "<group>"; };
+		354FBBD72933643F00FAE8A1 /* assembly.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = assembly.s; sourceTree = "<group>"; };
 		357BCD28293302440012C51F /* keystealClient */ = {isa = PBXFileReference; lastKnownFileType = folder; path = keystealClient; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 		1584775522007D7400CA5BE9 = {
 			isa = PBXGroup;
 			children = (
+				354FBBD72933643F00FAE8A1 /* assembly.s */,
 				357BCD28293302440012C51F /* keystealClient */,
 				155FA81C22A2ACC800D68879 /* dump-keychain.sh */,
 				155C395422905C05003E8B25 /* keystealClient */,
@@ -158,6 +161,7 @@
 				155FA80422A299C600D68879 /* helper.cpp in Sources */,
 				1584776B22007D9E00CA5BE9 /* inject.cpp in Sources */,
 				1584776A22007D9E00CA5BE9 /* assembly.s in Sources */,
+				354FBBD82933644000FAE8A1 /* assembly.s in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
