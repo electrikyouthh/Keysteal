@@ -134,6 +134,7 @@
 		158477302200788900CA5BE9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1410;
 				ORGANIZATIONNAME = "Mila Masaya";
 				TargetAttributes = {
