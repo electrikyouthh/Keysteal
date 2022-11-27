@@ -11,8 +11,8 @@
 		354FBBBD293356A200FAE8A1 /* securityd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 158477492200798000CA5BE9 /* securityd.cpp */; };
 		354FBBBE293356A400FAE8A1 /* assembly.s in Sources */ = {isa = PBXBuildFile; fileRef = 158477472200798000CA5BE9 /* assembly.s */; };
 		354FBBD629335D7E00FAE8A1 /* ucspUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 158477462200798000CA5BE9 /* ucspUser.cpp */; };
-		357BCD23293300590012C51F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15847753220079BA00CA5BE9 /* Security.framework */; };
-		357BCD24293300590012C51F /* Security.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15847753220079BA00CA5BE9 /* Security.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		357BCD23293300590012C51F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15847753220079BA00CA5BE9 /* Security.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		35CDAD562933B17000B2AA44 /* Security.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35CDAD552933B16F00B2AA44 /* Security.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,7 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				357BCD24293300590012C51F /* Security.framework in Embed Frameworks */,
+				35CDAD562933B17000B2AA44 /* Security.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 1;
@@ -53,6 +53,8 @@
 		354FBBBA2933568000FAE8A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Base; path = Base.lproj/keystealDaemon.entitlements; sourceTree = "<group>"; };
 		354FBBC0293356BA00FAE8A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = en; path = en.lproj/keystealDaemon.entitlements; sourceTree = "<group>"; };
 		357BCD292933024E0012C51F /* keystealDaemon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = keystealDaemon; sourceTree = "<group>"; };
+		35CDAD532933B11D00B2AA44 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		35CDAD552933B16F00B2AA44 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		1584772F2200788900CA5BE9 = {
 			isa = PBXGroup;
 			children = (
+				35CDAD552933B16F00B2AA44 /* Security.framework */,
 				1584773A2200788900CA5BE9 /* keystealDaemon */,
 				357BCD292933024E0012C51F /* keystealDaemon */,
 				158477392200788900CA5BE9 /* Products */,
@@ -105,6 +108,7 @@
 		15847752220079BA00CA5BE9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				35CDAD532933B11D00B2AA44 /* Security.framework */,
 				15847753220079BA00CA5BE9 /* Security.framework */,
 			);
 			name = Frameworks;
@@ -320,7 +324,7 @@
 				CLANG_USE_OPTIMIZATION_PROFILE = YES;
 				CODE_SIGN_ENTITLEMENTS = keystealDaemon/keystealDaemon.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
@@ -342,7 +346,7 @@
 				CLANG_USE_OPTIMIZATION_PROFILE = YES;
 				CODE_SIGN_ENTITLEMENTS = keystealDaemon/keystealDaemon.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
