@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		155FA80322A299C600D68879 /* helper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 155FA80122A299C600D68879 /* helper.hpp */; };
 		155FA80422A299C600D68879 /* helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 155FA80222A299C600D68879 /* helper.cpp */; };
-		155FA81E22A2ACED00D68879 /* dump-keychain.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 155FA81C22A2ACC800D68879 /* dump-keychain.sh */; };
+		155FA81E22A2ACED00D68879 /* dump-keychain.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 155FA81C22A2ACC800D68879 /* dump-keychain.sh */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		1584776922007D9E00CA5BE9 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1584776522007D9E00CA5BE9 /* main.mm */; };
 		1584776A22007D9E00CA5BE9 /* assembly.s in Sources */ = {isa = PBXBuildFile; fileRef = 1584776622007D9E00CA5BE9 /* assembly.s */; };
 		1584776B22007D9E00CA5BE9 /* inject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1584776722007D9E00CA5BE9 /* inject.cpp */; };
@@ -19,13 +19,13 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		155FA81D22A2ACEA00D68879 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "";
-			dstSubfolderSpec = 16;
+			dstSubfolderSpec = 6;
 			files = (
 				155FA81E22A2ACED00D68879 /* dump-keychain.sh in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -122,6 +122,7 @@
 		1584775622007D7400CA5BE9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1410;
 				ORGANIZATIONNAME = "Mila Masaya";
 				TargetAttributes = {
