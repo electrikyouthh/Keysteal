@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		354FBBBC2933568500FAE8A1 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 158477482200798000CA5BE9 /* main.mm */; };
+		354FBBBD293356A200FAE8A1 /* securityd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 158477492200798000CA5BE9 /* securityd.cpp */; };
+		354FBBBE293356A400FAE8A1 /* assembly.s in Sources */ = {isa = PBXBuildFile; fileRef = 158477472200798000CA5BE9 /* assembly.s */; };
+		354FBBBF293356B400FAE8A1 /* ucspUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 158477462200798000CA5BE9 /* ucspUser.cpp */; };
 		357BCD23293300590012C51F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15847753220079BA00CA5BE9 /* Security.framework */; };
 		357BCD24293300590012C51F /* Security.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15847753220079BA00CA5BE9 /* Security.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -46,6 +50,8 @@
 		158477492200798000CA5BE9 /* securityd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = securityd.cpp; sourceTree = "<group>"; };
 		1584774C2200798100CA5BE9 /* ucsp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; lineEnding = 0; path = ucsp.hpp; sourceTree = "<group>"; };
 		15847753220079BA00CA5BE9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		354FBBBA2933568000FAE8A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Base; path = Base.lproj/keystealDaemon.entitlements; sourceTree = "<group>"; };
+		354FBBC0293356BA00FAE8A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = en; path = en.lproj/keystealDaemon.entitlements; sourceTree = "<group>"; };
 		357BCD292933024E0012C51F /* keystealDaemon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = keystealDaemon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +88,7 @@
 		1584773A2200788900CA5BE9 /* keystealDaemon */ = {
 			isa = PBXGroup;
 			children = (
+				354FBBBB2933568000FAE8A1 /* keystealDaemon.entitlements */,
 				158477482200798000CA5BE9 /* main.mm */,
 				158477472200798000CA5BE9 /* assembly.s */,
 				158477492200798000CA5BE9 /* securityd.cpp */,
@@ -131,6 +138,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				CLASSPREFIX = MM;
 				LastUpgradeCheck = 1410;
 				ORGANIZATIONNAME = "Mila Masaya";
 				TargetAttributes = {
@@ -162,16 +170,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354FBBBD293356A200FAE8A1 /* securityd.cpp in Sources */,
+				354FBBBC2933568500FAE8A1 /* main.mm in Sources */,
+				354FBBBE293356A400FAE8A1 /* assembly.s in Sources */,
+				354FBBBF293356B400FAE8A1 /* ucspUser.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		354FBBBB2933568000FAE8A1 /* keystealDaemon.entitlements */ = {
+			isa = PBXVariantGroup;
+			children = (
+				354FBBBA2933568000FAE8A1 /* Base */,
+				354FBBC0293356BA00FAE8A1 /* en */,
+			);
+			name = keystealDaemon.entitlements;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		1584773D2200788900CA5BE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -217,12 +241,12 @@
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -234,7 +258,7 @@
 		1584773E2200788900CA5BE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -274,12 +298,12 @@
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -292,6 +316,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CODE_SIGN_ENTITLEMENTS = keystealDaemon/keystealDaemon.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -313,6 +338,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CODE_SIGN_ENTITLEMENTS = keystealDaemon/keystealDaemon.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
