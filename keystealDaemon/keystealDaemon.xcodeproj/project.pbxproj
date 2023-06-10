@@ -12,6 +12,18 @@
 		1584774F2200798100CA5BE9 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 158477482200798000CA5BE9 /* main.mm */; };
 		158477502200798100CA5BE9 /* securityd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 158477492200798000CA5BE9 /* securityd.cpp */; };
 		15847754220079BA00CA5BE9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15847753220079BA00CA5BE9 /* Security.framework */; };
+		3580F14C2A34E10F00036C8C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15847753220079BA00CA5BE9 /* Security.framework */; };
+		3580F14D2A34E10F00036C8C /* Security.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15847753220079BA00CA5BE9 /* Security.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3580F14F2A34F15900036C8C /* securityd.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 158477452200798000CA5BE9 /* securityd.hpp */; };
+		3580F1512A34F21A00036C8C /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3580F1502A34F21900036C8C /* SecurityFoundation.framework */; };
+		3580F1522A34F22500036C8C /* securityd.cpp in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 158477492200798000CA5BE9 /* securityd.cpp */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		3580F1532A34F22F00036C8C /* ucsp_types.h in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 158477432200798000CA5BE9 /* ucsp_types.h */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		3580F1542A34FDA200036C8C /* SecurityFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3580F1502A34F21900036C8C /* SecurityFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3580F1582A35005500036C8C /* Security.h in Sources */ = {isa = PBXBuildFile; fileRef = 3580F1572A35005200036C8C /* Security.h */; };
+		3580F1592A3500B700036C8C /* Security.h in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3580F1552A34FF6100036C8C /* Security.h */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		3580F15A2A35012500036C8C /* Security.h in Frameworks */ = {isa = PBXBuildFile; fileRef = 3580F1552A34FF6100036C8C /* Security.h */; };
+		3580F15C2A35026200036C8C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3580F15B2A35026200036C8C /* CFNetwork.framework */; };
+		3580F15E2A35027600036C8C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3580F15D2A35027600036C8C /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +53,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				3580F1592A3500B700036C8C /* Security.h in Embed Frameworks */,
+				3580F1542A34FDA200036C8C /* SecurityFoundation.framework in Embed Frameworks */,
+				3580F1532A34F22F00036C8C /* ucsp_types.h in Embed Frameworks */,
+				3580F1522A34F22500036C8C /* securityd.cpp in Embed Frameworks */,
 				3580F14D2A34E10F00036C8C /* Security.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -60,6 +76,13 @@
 		158477492200798000CA5BE9 /* securityd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = securityd.cpp; sourceTree = "<group>"; };
 		1584774C2200798100CA5BE9 /* ucsp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ucsp.hpp; sourceTree = "<group>"; };
 		15847753220079BA00CA5BE9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3580F1502A34F21900036C8C /* SecurityFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityFoundation.framework; path = System/Library/Frameworks/SecurityFoundation.framework; sourceTree = SDKROOT; };
+		3580F1552A34FF6100036C8C /* Security.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Security.h; path = ../../../../Downloads/Security.h; sourceTree = "<group>"; };
+		3580F1572A35005200036C8C /* Security.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Security.h; sourceTree = "<group>"; };
+		3580F15B2A35026200036C8C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3580F15D2A35027600036C8C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3580F15F2A35078500036C8C /* keystealDaemon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = keystealDaemon; sourceTree = "<group>"; };
+		35F224952A3480E00015BED2 /* keystealDaemon.profdata */ = {isa = PBXFileReference; lastKnownFileType = file; path = keystealDaemon.profdata; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +91,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				15847754220079BA00CA5BE9 /* Security.framework in Frameworks */,
+				3580F15E2A35027600036C8C /* QuartzCore.framework in Frameworks */,
+				3580F15C2A35026200036C8C /* CFNetwork.framework in Frameworks */,
+				3580F15A2A35012500036C8C /* Security.h in Frameworks */,
+				3580F1512A34F21A00036C8C /* SecurityFoundation.framework in Frameworks */,
+				3580F14C2A34E10F00036C8C /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				35CDAD552933B16F00B2AA44 /* Security.framework */,
+				3580F1572A35005200036C8C /* Security.h */,
 				1584773A2200788900CA5BE9 /* keystealDaemon */,
 				357BCD292933024E0012C51F /* keystealDaemon */,
+				3580F15F2A35078500036C8C /* keystealDaemon */,
 				158477392200788900CA5BE9 /* Products */,
 				15847752220079BA00CA5BE9 /* Frameworks */,
 				35F224942A3480E00015BED2 /* OptimizationProfiles */,
@@ -115,6 +145,10 @@
 			isa = PBXGroup;
 			children = (
 				35CDAD532933B11D00B2AA44 /* Security.framework */,
+				3580F15D2A35027600036C8C /* QuartzCore.framework */,
+				3580F15B2A35026200036C8C /* CFNetwork.framework */,
+				3580F1552A34FF6100036C8C /* Security.h */,
+				3580F1502A34F21900036C8C /* SecurityFoundation.framework */,
 				15847753220079BA00CA5BE9 /* Security.framework */,
 			);
 			name = Frameworks;
@@ -186,7 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1584774F2200798100CA5BE9 /* main.mm in Sources */,
+				3580F1582A35005500036C8C /* Security.h in Sources */,
+				1584774E2200798100CA5BE9 /* assembly.s in Sources */,
+				3580F14F2A34F15900036C8C /* securityd.hpp in Sources */,
 				158477502200798100CA5BE9 /* securityd.cpp in Sources */,
+				1584774F2200798100CA5BE9 /* main.mm in Sources */,
 				1584774D2200798100CA5BE9 /* ucspUser.cpp in Sources */,
 				1584774E2200798100CA5BE9 /* assembly.s in Sources */,
 			);
@@ -223,7 +261,7 @@
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -232,7 +270,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -242,12 +280,15 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -261,9 +302,15 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
 				SDKROOT = macosx;
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
 			};
@@ -285,7 +332,7 @@
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -294,7 +341,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -305,10 +352,13 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = NO;
@@ -317,8 +367,14 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
 				SDKROOT = macosx;
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
 			};
@@ -329,8 +385,14 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
+				DEAD_CODE_STRIPPING = NO;
 				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = FDD437X3NF;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -340,9 +402,16 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = FDD437X3NF;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
