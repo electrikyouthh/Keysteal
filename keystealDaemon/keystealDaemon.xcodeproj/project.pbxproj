@@ -3,16 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		354FBBBC2933568500FAE8A1 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 158477482200798000CA5BE9 /* main.mm */; };
-		354FBBBD293356A200FAE8A1 /* securityd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 158477492200798000CA5BE9 /* securityd.cpp */; };
-		354FBBBE293356A400FAE8A1 /* assembly.s in Sources */ = {isa = PBXBuildFile; fileRef = 158477472200798000CA5BE9 /* assembly.s */; };
-		354FBBD629335D7E00FAE8A1 /* ucspUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 158477462200798000CA5BE9 /* ucspUser.cpp */; };
-		357BCD23293300590012C51F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15847753220079BA00CA5BE9 /* Security.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		35CDAD562933B17000B2AA44 /* Security.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35CDAD552933B16F00B2AA44 /* Security.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1584774D2200798100CA5BE9 /* ucspUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 158477462200798000CA5BE9 /* ucspUser.cpp */; };
+		1584774E2200798100CA5BE9 /* assembly.s in Sources */ = {isa = PBXBuildFile; fileRef = 158477472200798000CA5BE9 /* assembly.s */; };
+		1584774F2200798100CA5BE9 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 158477482200798000CA5BE9 /* main.mm */; };
+		158477502200798100CA5BE9 /* securityd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 158477492200798000CA5BE9 /* securityd.cpp */; };
+		15847754220079BA00CA5BE9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15847753220079BA00CA5BE9 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,25 +35,31 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		3580F14E2A34E10F00036C8C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3580F14D2A34E10F00036C8C /* Security.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		158477382200788900CA5BE9 /* keystealDaemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = keystealDaemon; sourceTree = BUILT_PRODUCTS_DIR; };
-		158477422200798000CA5BE9 /* handletypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = handletypes.h; sourceTree = "<group>"; };
-		158477432200798000CA5BE9 /* ucsp_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ucsp_types.h; sourceTree = "<group>"; };
-		158477442200798000CA5BE9 /* ss_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ss_types.h; sourceTree = "<group>"; };
-		158477452200798000CA5BE9 /* securityd.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; lineEnding = 0; path = securityd.hpp; sourceTree = "<group>"; };
-		158477462200798000CA5BE9 /* ucspUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = ucspUser.cpp; sourceTree = "<group>"; };
-		158477472200798000CA5BE9 /* assembly.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; lineEnding = 0; path = assembly.s; sourceTree = "<group>"; };
-		158477482200798000CA5BE9 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = main.mm; sourceTree = "<group>"; };
-		158477492200798000CA5BE9 /* securityd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = securityd.cpp; sourceTree = "<group>"; };
-		1584774C2200798100CA5BE9 /* ucsp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; lineEnding = 0; path = ucsp.hpp; sourceTree = "<group>"; };
+		158477422200798000CA5BE9 /* handletypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = handletypes.h; sourceTree = "<group>"; };
+		158477432200798000CA5BE9 /* ucsp_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ucsp_types.h; sourceTree = "<group>"; };
+		158477442200798000CA5BE9 /* ss_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ss_types.h; sourceTree = "<group>"; };
+		158477452200798000CA5BE9 /* securityd.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = securityd.hpp; sourceTree = "<group>"; };
+		158477462200798000CA5BE9 /* ucspUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ucspUser.cpp; sourceTree = "<group>"; };
+		158477472200798000CA5BE9 /* assembly.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = assembly.s; sourceTree = "<group>"; };
+		158477482200798000CA5BE9 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		158477492200798000CA5BE9 /* securityd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = securityd.cpp; sourceTree = "<group>"; };
+		1584774C2200798100CA5BE9 /* ucsp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ucsp.hpp; sourceTree = "<group>"; };
 		15847753220079BA00CA5BE9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		354FBBBA2933568000FAE8A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Base; path = Base.lproj/keystealDaemon.entitlements; sourceTree = "<group>"; };
-		354FBBC0293356BA00FAE8A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = en; path = en.lproj/keystealDaemon.entitlements; sourceTree = "<group>"; };
-		357BCD292933024E0012C51F /* keystealDaemon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = keystealDaemon; sourceTree = "<group>"; };
-		35CDAD532933B11D00B2AA44 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		35CDAD552933B16F00B2AA44 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				357BCD23293300590012C51F /* Security.framework in Frameworks */,
+				15847754220079BA00CA5BE9 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 				357BCD292933024E0012C51F /* keystealDaemon */,
 				158477392200788900CA5BE9 /* Products */,
 				15847752220079BA00CA5BE9 /* Frameworks */,
+				35F224942A3480E00015BED2 /* OptimizationProfiles */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +120,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		35F224942A3480E00015BED2 /* OptimizationProfiles */ = {
+			isa = PBXGroup;
+			children = (
+				35F224952A3480E00015BED2 /* keystealDaemon.profdata */,
+			);
+			path = OptimizationProfiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,7 +138,6 @@
 				158477342200788900CA5BE9 /* Sources */,
 				158477352200788900CA5BE9 /* Frameworks */,
 				158477362200788900CA5BE9 /* CopyFiles */,
-				357BCD25293300590012C51F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,10 +154,8 @@
 		158477302200788900CA5BE9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
-				CLASSPREFIX = MM;
-				LastUpgradeCheck = 1410;
-				ORGANIZATIONNAME = "Mila Masaya";
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Linus Henze";
 				TargetAttributes = {
 					158477372200788900CA5BE9 = {
 						CreatedOnToolsVersion = 10.1;
@@ -174,10 +185,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				354FBBBD293356A200FAE8A1 /* securityd.cpp in Sources */,
-				354FBBBC2933568500FAE8A1 /* main.mm in Sources */,
-				354FBBBE293356A400FAE8A1 /* assembly.s in Sources */,
-				354FBBD629335D7E00FAE8A1 /* ucspUser.cpp in Sources */,
+				1584774F2200798100CA5BE9 /* main.mm in Sources */,
+				158477502200798100CA5BE9 /* securityd.cpp in Sources */,
+				1584774D2200798100CA5BE9 /* ucspUser.cpp in Sources */,
+				1584774E2200798100CA5BE9 /* assembly.s in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +210,7 @@
 		1584773D2200788900CA5BE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -229,10 +240,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = NO;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = keystealDaemon;
-				CODE_SIGN_IDENTITY = "Apple Development: Jose Sanchez-Masaya (A3ZY6H4ADC)";
-				COPY_PHASE_STRIP = YES;
-				DEAD_CODE_STRIPPING = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -263,7 +272,7 @@
 		1584773E2200788900CA5BE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -293,15 +302,13 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = NO;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = keystealDaemon;
-				CODE_SIGN_IDENTITY = "Apple Development: Jose Sanchez-Masaya (A3ZY6H4ADC)";
-				COPY_PHASE_STRIP = YES;
-				DEAD_CODE_STRIPPING = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_NS_ASSERTIONS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = NO;
@@ -320,21 +327,10 @@
 		158477402200788900CA5BE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_USE_OPTIMIZATION_PROFILE = YES;
-				CODE_SIGN_ENTITLEMENTS = keystealDaemon/keystealDaemon.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
-				DEVELOPMENT_TEAM = FDD437X3NF;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Mila-Masaya";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -342,22 +338,11 @@
 		158477412200788900CA5BE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_USE_OPTIMIZATION_PROFILE = YES;
-				CODE_SIGN_ENTITLEMENTS = keystealDaemon/keystealDaemon.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEPLOYMENT_POSTPROCESSING = YES;
-				DEVELOPMENT_TEAM = FDD437X3NF;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Mila-Masaya";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
