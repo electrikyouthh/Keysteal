@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,14 +13,9 @@
 		158477502200798100CA5BE9 /* securityd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 158477492200798000CA5BE9 /* securityd.cpp */; };
 		15847754220079BA00CA5BE9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15847753220079BA00CA5BE9 /* Security.framework */; };
 		3580F14C2A34E10F00036C8C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15847753220079BA00CA5BE9 /* Security.framework */; };
-		3580F14D2A34E10F00036C8C /* Security.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15847753220079BA00CA5BE9 /* Security.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3580F14F2A34F15900036C8C /* securityd.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 158477452200798000CA5BE9 /* securityd.hpp */; };
 		3580F1512A34F21A00036C8C /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3580F1502A34F21900036C8C /* SecurityFoundation.framework */; };
-		3580F1522A34F22500036C8C /* securityd.cpp in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 158477492200798000CA5BE9 /* securityd.cpp */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		3580F1532A34F22F00036C8C /* ucsp_types.h in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 158477432200798000CA5BE9 /* ucsp_types.h */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		3580F1542A34FDA200036C8C /* SecurityFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3580F1502A34F21900036C8C /* SecurityFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3580F1582A35005500036C8C /* Security.h in Sources */ = {isa = PBXBuildFile; fileRef = 3580F1572A35005200036C8C /* Security.h */; };
-		3580F1592A3500B700036C8C /* Security.h in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3580F1552A34FF6100036C8C /* Security.h */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		3580F15A2A35012500036C8C /* Security.h in Frameworks */ = {isa = PBXBuildFile; fileRef = 3580F1552A34FF6100036C8C /* Security.h */; };
 		3580F15C2A35026200036C8C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3580F15B2A35026200036C8C /* CFNetwork.framework */; };
 		3580F15E2A35027600036C8C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3580F15D2A35027600036C8C /* QuartzCore.framework */; };
@@ -35,32 +30,6 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-		};
-		357BCD25293300590012C51F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				35CDAD562933B17000B2AA44 /* Security.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		3580F14E2A34E10F00036C8C /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3580F1592A3500B700036C8C /* Security.h in Embed Frameworks */,
-				3580F1542A34FDA200036C8C /* SecurityFoundation.framework in Embed Frameworks */,
-				3580F1532A34F22F00036C8C /* ucsp_types.h in Embed Frameworks */,
-				3580F1522A34F22500036C8C /* securityd.cpp in Embed Frameworks */,
-				3580F14D2A34E10F00036C8C /* Security.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -81,7 +50,7 @@
 		3580F1572A35005200036C8C /* Security.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Security.h; sourceTree = "<group>"; };
 		3580F15B2A35026200036C8C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		3580F15D2A35027600036C8C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		3580F15F2A35078500036C8C /* keystealDaemon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = keystealDaemon; sourceTree = "<group>"; };
+		3580F15F2A35078500036C8C /* keystealDaemon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = keystealDaemon; sourceTree = "<group>"; };
 		35F224952A3480E00015BED2 /* keystealDaemon.profdata */ = {isa = PBXFileReference; lastKnownFileType = file; path = keystealDaemon.profdata; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,10 +74,8 @@
 		1584772F2200788900CA5BE9 = {
 			isa = PBXGroup;
 			children = (
-				35CDAD552933B16F00B2AA44 /* Security.framework */,
 				3580F1572A35005200036C8C /* Security.h */,
 				1584773A2200788900CA5BE9 /* keystealDaemon */,
-				357BCD292933024E0012C51F /* keystealDaemon */,
 				3580F15F2A35078500036C8C /* keystealDaemon */,
 				158477392200788900CA5BE9 /* Products */,
 				15847752220079BA00CA5BE9 /* Frameworks */,
@@ -144,7 +111,6 @@
 		15847752220079BA00CA5BE9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				35CDAD532933B11D00B2AA44 /* Security.framework */,
 				3580F15D2A35027600036C8C /* QuartzCore.framework */,
 				3580F15B2A35026200036C8C /* CFNetwork.framework */,
 				3580F1552A34FF6100036C8C /* Security.h */,
@@ -236,8 +202,6 @@
 		354FBBBB2933568000FAE8A1 /* keystealDaemon.entitlements */ = {
 			isa = PBXVariantGroup;
 			children = (
-				354FBBBA2933568000FAE8A1 /* Base */,
-				354FBBC0293356BA00FAE8A1 /* en */,
 			);
 			name = keystealDaemon.entitlements;
 			sourceTree = "<group>";
@@ -248,7 +212,7 @@
 		1584773D2200788900CA5BE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -286,8 +250,6 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -300,8 +262,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -319,7 +279,7 @@
 		1584773E2200788900CA5BE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -351,7 +311,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -365,8 +324,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -383,6 +340,7 @@
 		158477402200788900CA5BE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
@@ -400,6 +358,7 @@
 		158477412200788900CA5BE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
