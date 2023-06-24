@@ -42,9 +42,11 @@
 		158477462200798000CA5BE9 /* ucspUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ucspUser.cpp; sourceTree = "<group>"; };
 		158477472200798000CA5BE9 /* assembly.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = assembly.s; sourceTree = "<group>"; };
 		158477482200798000CA5BE9 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
-		158477492200798000CA5BE9 /* securityd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = securityd.cpp; sourceTree = "<group>"; };
+		158477492200798000CA5BE9 /* securityd.cpp */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = securityd.cpp; sourceTree = "<group>"; };
 		1584774C2200798100CA5BE9 /* ucsp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ucsp.hpp; sourceTree = "<group>"; };
 		15847753220079BA00CA5BE9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3523E0762A3B6CB800F525D3 /* keystealDaemon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = keystealDaemon; sourceTree = "<group>"; };
+		3523E0772A3B6CC400F525D3 /* keystealDaemon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = keystealDaemon; sourceTree = "<group>"; };
 		3580F1502A34F21900036C8C /* SecurityFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityFoundation.framework; path = System/Library/Frameworks/SecurityFoundation.framework; sourceTree = SDKROOT; };
 		3580F1552A34FF6100036C8C /* Security.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Security.h; path = ../../../../Downloads/Security.h; sourceTree = "<group>"; };
 		3580F1572A35005200036C8C /* Security.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Security.h; sourceTree = "<group>"; };
@@ -96,7 +98,9 @@
 			children = (
 				354FBBBB2933568000FAE8A1 /* keystealDaemon.entitlements */,
 				158477482200798000CA5BE9 /* main.mm */,
+				3523E0762A3B6CB800F525D3 /* keystealDaemon */,
 				158477472200798000CA5BE9 /* assembly.s */,
+				3523E0772A3B6CC400F525D3 /* keystealDaemon */,
 				158477492200798000CA5BE9 /* securityd.cpp */,
 				158477452200798000CA5BE9 /* securityd.hpp */,
 				158477422200798000CA5BE9 /* handletypes.h */,
